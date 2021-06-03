@@ -1,10 +1,10 @@
 ﻿//PlayerShooter.cs
 
 using UnityEngine;
-
+using System.Collections;
 // 주어진 Gun 오브젝트를 쏘거나 재장전
 // 알맞은 애니메이션을 재생하고 IK를 사용해 캐릭터 양손이 총에 위치하도록 조정
-public class PlayerAttacker : MonoBehaviour {
+public class PlayerBower : MonoBehaviour {
     
     /*
     public Gun gun; // 사용할 총
@@ -17,7 +17,10 @@ public class PlayerAttacker : MonoBehaviour {
     private Animator playerAnimator; // 애니메이터 컴포넌트
     private PlayerMoving playerMoving;
     private AudioSource audioSource;
-    public AudioClip attackVoice;
+    public AudioClip attackSound;
+
+    public GameObject arrowPrefab;
+    public Transform aim;
 
     private void Start() {
         // 사용할 컴포넌트들을 가져오기
@@ -64,16 +67,27 @@ public class PlayerAttacker : MonoBehaviour {
  
     private void Update() {
         // 입력을 감지하고 총 발사하거나 재장전
-        Slash();
+        Bow();
     }
 
-    private void Slash()
+    private void Bow()
     {
-        if(playerInput.fire == true && playerAnimator.GetBool("attack")==false)
+        if (Input.GetMouseButtonDown(0))
         {
-            playerAnimator.SetBool("attack", true);
-            audioSource.PlayOneShot(attackVoice);
+            if (!playerAnimator.GetCurrentAnimatorStateInfo(0).IsName("run"))
+            {
+                playerAnimator.SetTrigger("skill001");
+                StartCoroutine(WaitForIt());
+            }
         }
+    }
+    
+    IEnumerator WaitForIt()
+    {
+        yield return new WaitForSeconds(1.5f);
+        audioSource.PlayOneShot(attackSound);
+        GameObject arrow = Instantiate(arrowPrefab, transform.position + new Vector3(0, 0.7F, 0), transform.rotation);
+        arrow.transform.LookAt(aim);
     }
     
     /*   
