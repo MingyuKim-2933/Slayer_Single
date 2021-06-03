@@ -15453,7 +15453,6 @@ GameObject:
   - component: {fileID: 4570283435390389449}
   - component: {fileID: 2440304254275646968}
   - component: {fileID: 8553145568213496120}
-  - component: {fileID: 7647084843234418938}
   - component: {fileID: 6671976779197587250}
   - component: {fileID: 793606474904201470}
   - component: {fileID: 6152818775636239340}
@@ -15666,24 +15665,6 @@ MonoBehaviour:
   reloadButtonName: Reload
   moveZAxisName: Vertical
   moveXAxisName: Horizontal
---- !u!114 &7647084843234418938
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1869306673478708}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_GeneratorAsset: {fileID: 0}
-  m_Script: {fileID: 11500000, guid: d59ae54f97f62d844aebf692b4294dda, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startingHealth: 100
-  healthSlider: {fileID: 4352485040407818808}
-  deathClip: {fileID: 8300000, guid: 955008aa0bddd7848b144699287a7333, type: 3}
-  hitClip: {fileID: 8300000, guid: 84a8db65e7dfcb144a34d3f29f40c64f, type: 3}
-  itemPickupClip: {fileID: 8300000, guid: 67df49cb7c09ee5438c86154527bc980, type: 3}
 --- !u!114 &6671976779197587250
 MonoBehaviour:
   m_ObjectHideFlags: 0

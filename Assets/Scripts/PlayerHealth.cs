@@ -23,7 +23,7 @@ public class PlayerHealth : LivingEntity {
         playerAudioPlayer = GetComponent<AudioSource>();
 
         playerMoving = GetComponent<PlayerMoving>();
-        playerShooter = GetComponent<PlayerShooter>();
+        //playerShooter = GetComponent<PlayerShooter>();
     }
 
     protected override void OnEnable() {
@@ -39,7 +39,7 @@ public class PlayerHealth : LivingEntity {
 
         //플레이어 조작을 받는 컴포넌트 활성화
         playerMoving.enabled = true;
-        playerShooter.enabled = true;
+        //playerShooter.enabled = true;
     }
 
     // 체력 회복
@@ -78,7 +78,7 @@ public class PlayerHealth : LivingEntity {
 
         //플레이어 조작을 받는 컴포넌트 비활성화
         playerMoving.enabled = false;
-        playerShooter.enabled = false;
+        //playerShooter.enabled = false;
     }
 
     private void OnTriggerEnter(Collider other) {
