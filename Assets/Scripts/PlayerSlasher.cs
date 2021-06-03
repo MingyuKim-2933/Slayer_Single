@@ -21,6 +21,7 @@ public class PlayerSlasher : MonoBehaviour {
 
     public GameObject swordPrefab;
     public bool isAttacking = false;
+    private PlayerHealth playerHealth;
 
 
     private void Start() {
@@ -29,6 +30,7 @@ public class PlayerSlasher : MonoBehaviour {
         playerMoving = GetComponent<PlayerMoving>();
         playerAnimator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
+        playerHealth = GetComponent<PlayerHealth>();
     }
 
     /*
@@ -75,10 +77,13 @@ public class PlayerSlasher : MonoBehaviour {
     {
         if (Input.GetMouseButtonDown(0))
         {
-            playerAnimator.SetTrigger("attack");
-            audioSource.PlayOneShot(attackSound);
-            isAttacking = true;
-            StartCoroutine(WaitForIt());
+            if (!playerHealth.dead)
+            {
+                playerAnimator.SetTrigger("attack");
+                audioSource.PlayOneShot(attackSound);
+                isAttacking = true;
+                StartCoroutine(WaitForIt());
+            }
         }
     }
 

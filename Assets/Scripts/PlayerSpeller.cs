@@ -22,6 +22,7 @@ public class PlayerSpeller : MonoBehaviour {
 
     public GameObject magicBallPrefab;
     public Transform aim;
+    private PlayerHealth playerHealth;
 
     private void Start() {
         // 사용할 컴포넌트들을 가져오기
@@ -29,6 +30,7 @@ public class PlayerSpeller : MonoBehaviour {
         playerMoving = GetComponent<PlayerMoving>();
         playerAnimator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
+        playerHealth = GetComponent<PlayerHealth>();
     }
 
     /*
@@ -73,14 +75,19 @@ public class PlayerSpeller : MonoBehaviour {
 
     private void Spell()
     {
+        
         if (Input.GetMouseButtonDown(0))
         {
-            if (!playerAnimator.GetCurrentAnimatorStateInfo(0).IsName("run"))
+            if (!playerHealth.dead)
             {
-                playerAnimator.SetTrigger("skill001");
-                StartCoroutine(WaitForIt());
+                if (!playerAnimator.GetCurrentAnimatorStateInfo(0).IsName("run"))
+                {
+                    playerAnimator.SetTrigger("skill001");
+                    StartCoroutine(WaitForIt());
+                }
             }
         }
+        
     }
     
     IEnumerator WaitForIt()
