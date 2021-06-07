@@ -16,6 +16,7 @@ public class Sword : MonoBehaviour
     {
         
     }
+
     void OnCollisionEnter(Collider other)
     {
         if (playerSlasher.isAttacking)

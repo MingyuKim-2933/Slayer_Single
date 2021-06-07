@@ -155,6 +155,9 @@ public class Enemy : LivingEntity {
         enemyAnimator.SetTrigger("Die");
         //사망 효과음 재생
         enemyAudioPlayer.PlayOneShot(deathSound);
+
+        // *** 오브젝트 제거 
+        Destroy(gameObject, 2f);
     }
 
     private void OnTriggerStay(Collider other) {
@@ -176,6 +179,9 @@ public class Enemy : LivingEntity {
                 //상대방의 피격 위치와 피격 방향을 근사값으로 계산
                 Vector3 hitPoint = other.ClosestPoint(transform.position);
                 Vector3 hitNormal = transform.position - other.transform.position;
+
+                // *** 공격 애니메이터 호출
+                enemyAnimator.SetTrigger("Attack");
 
                 //공격 실행
                 attackTarget.OnDamage(damage, hitPoint, hitNormal);
