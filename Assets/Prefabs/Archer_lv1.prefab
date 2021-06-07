@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 106070497}
   - component: {fileID: 106070499}
   - component: {fileID: 106070498}
+  - component: {fileID: 5159153331754310704}
   m_Layer: 0
   m_Name: 201_arrow_lv1
   m_TagString: Untagged
@@ -90,6 +91,20 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.00000016763806, y: 0.000000055879354, z: 0.26244855}
     m_Extent: {x: 0.027219223, y: 0.027219193, z: 0.32982278}
   m_DirtyAABB: 0
+--- !u!114 &5159153331754310704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 106070496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 6b1a00c3b1db80948a2d779589ea0d15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 8
 --- !u!1 &162855549
 GameObject:
   m_ObjectHideFlags: 0
@@ -2233,6 +2248,7 @@ MonoBehaviour:
   attackSound: {fileID: 8300000, guid: e1a85b904f8b775408fb488ef7493269, type: 3}
   arrowPrefab: {fileID: 2112151187, guid: 13b31f8da9bd35843ba4c184a9122b9a, type: 3}
   aim: {fileID: 1045848112}
+  playerHealth: {fileID: 0}
 --- !u!114 &1845192687
 MonoBehaviour:
   m_ObjectHideFlags: 0

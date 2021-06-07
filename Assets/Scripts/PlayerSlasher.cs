@@ -97,7 +97,7 @@ public class PlayerSlasher : MonoBehaviour {
     {
         if (isAttacking)
         {
-            if (other.tag == "Enemy")
+            if (other.gameObject.layer == LayerMask.NameToLayer("Enemy"))
             {
                 Enemy enemy = other.GetComponent<Enemy>();
 
