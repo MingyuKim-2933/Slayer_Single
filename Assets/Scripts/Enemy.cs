@@ -120,6 +120,9 @@ public class Enemy : LivingEntity {
 
     // 데미지를 입었을때 실행할 처리
     public override void OnDamage(float damage, Vector3 hitPoint, Vector3 hitNormal) {
+        Debug.Log("Enemy.OnDamage");
+        // LivingEntity의 OnDamage()를 실행하여 데미지 적용
+        base.OnDamage(damage, hitPoint, hitNormal);
         //아직 사망하지 않은 경우에만 피격 효과 재생
         if (!dead)
         {
@@ -131,8 +134,7 @@ public class Enemy : LivingEntity {
             //피격 효과음 재생
             enemyAudioPlayer.PlayOneShot(hitSound);
         }
-        // LivingEntity의 OnDamage()를 실행하여 데미지 적용
-        base.OnDamage(damage, hitPoint, hitNormal);
+        
     }
 
     // 사망 처리

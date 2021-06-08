@@ -7,6 +7,7 @@ public class MagicBall : MonoBehaviour
     public float speed = 100f;
     private Rigidbody magicBallRigidbody;
     // Start is called before the first frame update
+    public float damage = 100;
     void Start()
     {
         magicBallRigidbody = GetComponent <Rigidbody>();
@@ -25,10 +26,11 @@ public class MagicBall : MonoBehaviour
         if (other.gameObject.layer == LayerMask.NameToLayer("Enemy"))
         {
             Enemy enemy = other.GetComponent<Enemy>();
-
             if (enemy != null)
             {
-                enemy.Die();
+                Vector3 hitPoint = other.ClosestPoint(transform.position);
+                Vector3 hitNormal = transform.position - other.transform.position;
+                enemy.OnDamage(damage, hitPoint, hitNormal);
             }
         }
     }

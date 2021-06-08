@@ -6,6 +6,7 @@ public class Arrow : MonoBehaviour
 {
     public float speed = 8f;
     private Rigidbody arrowRigidbody;
+    public float damage = 30;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +29,9 @@ public class Arrow : MonoBehaviour
 
             if (enemy != null)
             {
-                enemy.Die();
+                Vector3 hitPoint = other.ClosestPoint(transform.position);
+                Vector3 hitNormal = transform.position - other.transform.position;
+                enemy.OnDamage(damage, hitPoint, hitNormal);
             }
         }
     }

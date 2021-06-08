@@ -144,7 +144,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4890069}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.31, y: 0, z: 0}
+  m_LocalPosition: {x: 3.31, y: 0, z: -9.63}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -253,11 +253,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cliff_A (11)
       objectReference: {fileID: 0}
-    - target: {fileID: 23000010402929834, guid: 95c8a7510ec354946b3fd45db8e83359,
-        type: 3}
-      propertyPath: m_ScaleInLightmap
-      value: 0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 4000012239912756, guid: 95c8a7510ec354946b3fd45db8e83359, type: 3}
       propertyPath: m_LocalPosition.x
       value: 20
@@ -307,6 +302,11 @@ PrefabInstance:
       propertyPath: m_ScaleInLightmap
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 23000010402929834, guid: 95c8a7510ec354946b3fd45db8e83359,
+        type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 23000012606156224, guid: 95c8a7510ec354946b3fd45db8e83359,
         type: 3}
       propertyPath: m_ScaleInLightmap
@@ -330,11 +330,6 @@ PrefabInstance:
     - target: {fileID: 1000010017310506, guid: 95c8a7510ec354946b3fd45db8e83359, type: 3}
       propertyPath: m_Name
       value: Cliff_A (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 23000010402929834, guid: 95c8a7510ec354946b3fd45db8e83359,
-        type: 3}
-      propertyPath: m_ScaleInLightmap
-      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 4000012239912756, guid: 95c8a7510ec354946b3fd45db8e83359, type: 3}
       propertyPath: m_LocalPosition.x
@@ -389,6 +384,11 @@ PrefabInstance:
       propertyPath: m_ScaleInLightmap
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 23000010402929834, guid: 95c8a7510ec354946b3fd45db8e83359,
+        type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 23000012606156224, guid: 95c8a7510ec354946b3fd45db8e83359,
         type: 3}
       propertyPath: m_ScaleInLightmap
@@ -412,11 +412,6 @@ PrefabInstance:
     - target: {fileID: 1000010017310506, guid: 95c8a7510ec354946b3fd45db8e83359, type: 3}
       propertyPath: m_Name
       value: Cliff_A (8)
-      objectReference: {fileID: 0}
-    - target: {fileID: 23000010402929834, guid: 95c8a7510ec354946b3fd45db8e83359,
-        type: 3}
-      propertyPath: m_ScaleInLightmap
-      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 4000012239912756, guid: 95c8a7510ec354946b3fd45db8e83359, type: 3}
       propertyPath: m_LocalPosition.x
@@ -467,6 +462,11 @@ PrefabInstance:
       value: -87.527
       objectReference: {fileID: 0}
     - target: {fileID: 23000010582669138, guid: 95c8a7510ec354946b3fd45db8e83359,
+        type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23000010402929834, guid: 95c8a7510ec354946b3fd45db8e83359,
         type: 3}
       propertyPath: m_ScaleInLightmap
       value: 0.1
@@ -543,46 +543,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4000010013880912, guid: c10c321eba25fd048889f2ab186d7ba2, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -12.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010013880912, guid: c10c321eba25fd048889f2ab186d7ba2, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.32
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010013880912, guid: c10c321eba25fd048889f2ab186d7ba2, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -27.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010013880912, guid: c10c321eba25fd048889f2ab186d7ba2, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010013880912, guid: c10c321eba25fd048889f2ab186d7ba2, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010013880912, guid: c10c321eba25fd048889f2ab186d7ba2, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010013880912, guid: c10c321eba25fd048889f2ab186d7ba2, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010013880912, guid: c10c321eba25fd048889f2ab186d7ba2, type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010013880912, guid: c10c321eba25fd048889f2ab186d7ba2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010013880912, guid: c10c321eba25fd048889f2ab186d7ba2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 114000013527904408, guid: c10c321eba25fd048889f2ab186d7ba2,
         type: 3}
       propertyPath: cliffShader
@@ -647,6 +607,46 @@ PrefabInstance:
         type: 3}
       propertyPath: globalColor.b
       value: 0.6603774
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010013880912, guid: c10c321eba25fd048889f2ab186d7ba2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -12.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010013880912, guid: c10c321eba25fd048889f2ab186d7ba2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010013880912, guid: c10c321eba25fd048889f2ab186d7ba2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -27.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010013880912, guid: c10c321eba25fd048889f2ab186d7ba2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010013880912, guid: c10c321eba25fd048889f2ab186d7ba2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010013880912, guid: c10c321eba25fd048889f2ab186d7ba2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010013880912, guid: c10c321eba25fd048889f2ab186d7ba2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010013880912, guid: c10c321eba25fd048889f2ab186d7ba2, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010013880912, guid: c10c321eba25fd048889f2ab186d7ba2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010013880912, guid: c10c321eba25fd048889f2ab186d7ba2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c10c321eba25fd048889f2ab186d7ba2, type: 3}
@@ -725,11 +725,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 207172843}
     m_Modifications:
-    - target: {fileID: 23000010402929834, guid: 95c8a7510ec354946b3fd45db8e83359,
-        type: 3}
-      propertyPath: m_ScaleInLightmap
-      value: 0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 4000012239912756, guid: 95c8a7510ec354946b3fd45db8e83359, type: 3}
       propertyPath: m_LocalPosition.x
       value: -29.199333
@@ -763,6 +758,11 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 23000010582669138, guid: 95c8a7510ec354946b3fd45db8e83359,
+        type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23000010402929834, guid: 95c8a7510ec354946b3fd45db8e83359,
         type: 3}
       propertyPath: m_ScaleInLightmap
       value: 0.1
@@ -911,12 +911,12 @@ PrefabInstance:
       propertyPath: m_ScaleInLightmap
       value: 0.1
       objectReference: {fileID: 0}
-    - target: {fileID: 23000011378871242, guid: 6df651d459fb20b4290d1595b18b35c1,
+    - target: {fileID: 23000010220859098, guid: 6df651d459fb20b4290d1595b18b35c1,
         type: 3}
       propertyPath: m_ScaleInLightmap
       value: 0.1
       objectReference: {fileID: 0}
-    - target: {fileID: 23000010220859098, guid: 6df651d459fb20b4290d1595b18b35c1,
+    - target: {fileID: 23000011378871242, guid: 6df651d459fb20b4290d1595b18b35c1,
         type: 3}
       propertyPath: m_ScaleInLightmap
       value: 0.1
@@ -936,11 +936,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 207172843}
     m_Modifications:
-    - target: {fileID: 23000011331677892, guid: b07571e14a54e824fa328b3df163a8f8,
-        type: 3}
-      propertyPath: m_ScaleInLightmap
-      value: 0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 4000010766231838, guid: b07571e14a54e824fa328b3df163a8f8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -42.67
@@ -988,6 +983,11 @@ PrefabInstance:
     - target: {fileID: 4000010766231838, guid: b07571e14a54e824fa328b3df163a8f8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: -108.773
+      objectReference: {fileID: 0}
+    - target: {fileID: 23000011331677892, guid: b07571e14a54e824fa328b3df163a8f8,
+        type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 23000012304186976, guid: b07571e14a54e824fa328b3df163a8f8,
         type: 3}
@@ -1472,11 +1472,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cliff_A (10)
       objectReference: {fileID: 0}
-    - target: {fileID: 23000010402929834, guid: 95c8a7510ec354946b3fd45db8e83359,
-        type: 3}
-      propertyPath: m_ScaleInLightmap
-      value: 0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 4000012239912756, guid: 95c8a7510ec354946b3fd45db8e83359, type: 3}
       propertyPath: m_LocalPosition.x
       value: 40.2
@@ -1522,6 +1517,11 @@ PrefabInstance:
       value: 2.3609326
       objectReference: {fileID: 0}
     - target: {fileID: 23000010582669138, guid: 95c8a7510ec354946b3fd45db8e83359,
+        type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23000010402929834, guid: 95c8a7510ec354946b3fd45db8e83359,
         type: 3}
       propertyPath: m_ScaleInLightmap
       value: 0.1
@@ -1578,6 +1578,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 100
+  health: 0
   whatIsTarget:
     serializedVersion: 2
     m_Bits: 512
@@ -1797,11 +1798,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cliff_A (9)
       objectReference: {fileID: 0}
-    - target: {fileID: 23000010402929834, guid: 95c8a7510ec354946b3fd45db8e83359,
-        type: 3}
-      propertyPath: m_ScaleInLightmap
-      value: 0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 4000012239912756, guid: 95c8a7510ec354946b3fd45db8e83359, type: 3}
       propertyPath: m_LocalPosition.x
       value: -53.5
@@ -1851,6 +1847,11 @@ PrefabInstance:
       value: -199.66899
       objectReference: {fileID: 0}
     - target: {fileID: 23000010582669138, guid: 95c8a7510ec354946b3fd45db8e83359,
+        type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23000010402929834, guid: 95c8a7510ec354946b3fd45db8e83359,
         type: 3}
       propertyPath: m_ScaleInLightmap
       value: 0.1
@@ -2326,7 +2327,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1457883798}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 2.29, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2490,7 +2491,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9516730ad22e3d6498d387d90ea662ac, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.202
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2585,11 +2586,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cliff_A (5)
       objectReference: {fileID: 0}
-    - target: {fileID: 23000010402929834, guid: 95c8a7510ec354946b3fd45db8e83359,
-        type: 3}
-      propertyPath: m_ScaleInLightmap
-      value: 0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 4000012239912756, guid: 95c8a7510ec354946b3fd45db8e83359, type: 3}
       propertyPath: m_LocalPosition.x
       value: -15.46
@@ -2643,6 +2639,11 @@ PrefabInstance:
       propertyPath: m_ScaleInLightmap
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 23000010402929834, guid: 95c8a7510ec354946b3fd45db8e83359,
+        type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 23000012606156224, guid: 95c8a7510ec354946b3fd45db8e83359,
         type: 3}
       propertyPath: m_ScaleInLightmap
@@ -2666,11 +2667,6 @@ PrefabInstance:
     - target: {fileID: 1000010017310506, guid: 95c8a7510ec354946b3fd45db8e83359, type: 3}
       propertyPath: m_Name
       value: Cliff_A (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 23000010402929834, guid: 95c8a7510ec354946b3fd45db8e83359,
-        type: 3}
-      propertyPath: m_ScaleInLightmap
-      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 4000012239912756, guid: 95c8a7510ec354946b3fd45db8e83359, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2725,6 +2721,11 @@ PrefabInstance:
       propertyPath: m_ScaleInLightmap
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 23000010402929834, guid: 95c8a7510ec354946b3fd45db8e83359,
+        type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 23000012606156224, guid: 95c8a7510ec354946b3fd45db8e83359,
         type: 3}
       propertyPath: m_ScaleInLightmap
@@ -2748,11 +2749,6 @@ PrefabInstance:
     - target: {fileID: 1000010017310506, guid: 95c8a7510ec354946b3fd45db8e83359, type: 3}
       propertyPath: m_Name
       value: Cliff_A (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 23000010402929834, guid: 95c8a7510ec354946b3fd45db8e83359,
-        type: 3}
-      propertyPath: m_ScaleInLightmap
-      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 4000012239912756, guid: 95c8a7510ec354946b3fd45db8e83359, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2803,6 +2799,11 @@ PrefabInstance:
       value: -103.384
       objectReference: {fileID: 0}
     - target: {fileID: 23000010582669138, guid: 95c8a7510ec354946b3fd45db8e83359,
+        type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23000010402929834, guid: 95c8a7510ec354946b3fd45db8e83359,
         type: 3}
       propertyPath: m_ScaleInLightmap
       value: 0.1
@@ -3242,6 +3243,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 1144027329362878, guid: 63226789a2ac34fec8493b064c47bd44, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1262948069140858, guid: 63226789a2ac34fec8493b064c47bd44, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63226789a2ac34fec8493b064c47bd44, type: 3}
 --- !u!1001 &1713687465
@@ -3254,11 +3263,6 @@ PrefabInstance:
     - target: {fileID: 1000010017310506, guid: 95c8a7510ec354946b3fd45db8e83359, type: 3}
       propertyPath: m_Name
       value: Cliff_A (7)
-      objectReference: {fileID: 0}
-    - target: {fileID: 23000010402929834, guid: 95c8a7510ec354946b3fd45db8e83359,
-        type: 3}
-      propertyPath: m_ScaleInLightmap
-      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 4000012239912756, guid: 95c8a7510ec354946b3fd45db8e83359, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3305,6 +3309,11 @@ PrefabInstance:
       value: 4.2303615
       objectReference: {fileID: 0}
     - target: {fileID: 23000010582669138, guid: 95c8a7510ec354946b3fd45db8e83359,
+        type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23000010402929834, guid: 95c8a7510ec354946b3fd45db8e83359,
         type: 3}
       propertyPath: m_ScaleInLightmap
       value: 0.1
@@ -3435,6 +3444,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 100
+  health: 0
   whatIsTarget:
     serializedVersion: 2
     m_Bits: 512
@@ -3443,6 +3453,19 @@ MonoBehaviour:
   hitSound: {fileID: 0}
   damage: 1
   timeBetAttack: 0.5
+--- !u!65 &1861327970
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1861327968}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 1.5, z: 0.5}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!195 &1861327974
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -3517,11 +3540,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cliff_A (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 23000010402929834, guid: 95c8a7510ec354946b3fd45db8e83359,
-        type: 3}
-      propertyPath: m_ScaleInLightmap
-      value: 0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 4000012239912756, guid: 95c8a7510ec354946b3fd45db8e83359, type: 3}
       propertyPath: m_LocalPosition.x
       value: -54.62
@@ -3567,6 +3585,11 @@ PrefabInstance:
       value: 1.7798604
       objectReference: {fileID: 0}
     - target: {fileID: 23000010582669138, guid: 95c8a7510ec354946b3fd45db8e83359,
+        type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23000010402929834, guid: 95c8a7510ec354946b3fd45db8e83359,
         type: 3}
       propertyPath: m_ScaleInLightmap
       value: 0.1
@@ -3758,11 +3781,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cliff_A (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 23000010402929834, guid: 95c8a7510ec354946b3fd45db8e83359,
-        type: 3}
-      propertyPath: m_ScaleInLightmap
-      value: 0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 4000012239912756, guid: 95c8a7510ec354946b3fd45db8e83359, type: 3}
       propertyPath: m_LocalPosition.x
       value: -39.91
@@ -3812,6 +3830,11 @@ PrefabInstance:
       value: 44.751003
       objectReference: {fileID: 0}
     - target: {fileID: 23000010582669138, guid: 95c8a7510ec354946b3fd45db8e83359,
+        type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23000010402929834, guid: 95c8a7510ec354946b3fd45db8e83359,
         type: 3}
       propertyPath: m_ScaleInLightmap
       value: 0.1
@@ -3982,12 +4005,12 @@ PrefabInstance:
       propertyPath: m_ScaleInLightmap
       value: 0.1
       objectReference: {fileID: 0}
-    - target: {fileID: 23000011378871242, guid: 6df651d459fb20b4290d1595b18b35c1,
+    - target: {fileID: 23000010220859098, guid: 6df651d459fb20b4290d1595b18b35c1,
         type: 3}
       propertyPath: m_ScaleInLightmap
       value: 0.1
       objectReference: {fileID: 0}
-    - target: {fileID: 23000010220859098, guid: 6df651d459fb20b4290d1595b18b35c1,
+    - target: {fileID: 23000011378871242, guid: 6df651d459fb20b4290d1595b18b35c1,
         type: 3}
       propertyPath: m_ScaleInLightmap
       value: 0.1

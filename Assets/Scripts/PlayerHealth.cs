@@ -2,6 +2,7 @@
 
 using UnityEngine;
 using UnityEngine.UI; // UI 관련 코드
+using System.Collections;
 
 // 플레이어 캐릭터의 생명체로서의 동작을 담당
 public class PlayerHealth : LivingEntity {
@@ -79,8 +80,14 @@ public class PlayerHealth : LivingEntity {
         //플레이어 조작을 받는 컴포넌트 비활성화
         playerMoving.enabled = false;
         //playerShooter.enabled = false;
+        StartCoroutine(WaitDestroy());
     }
 
+    IEnumerator WaitDestroy()
+    {
+        yield return new WaitForSeconds(2);
+        Destroy(gameObject);
+    }
     private void OnTriggerEnter(Collider other) {
         // 아이템과 충돌한 경우 해당 아이템을 사용하는 처리
         //사망하지 않은 경우에만 아이템 사용 가능
@@ -99,4 +106,5 @@ public class PlayerHealth : LivingEntity {
             }
         }
     }
+
 }

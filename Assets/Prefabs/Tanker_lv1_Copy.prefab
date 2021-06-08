@@ -2023,8 +2023,6 @@ GameObject:
   - component: {fileID: 1709265180597451669}
   - component: {fileID: 8659815868317082958}
   - component: {fileID: 1033148616218796401}
-  - component: {fileID: 5219285333438821859}
-  - component: {fileID: 1394537817293315392}
   m_Layer: 9
   m_Name: Tanker_lv1_Copy
   m_TagString: Untagged
@@ -2051,6 +2049,7 @@ Transform:
   - {fileID: 4683478584713322}
   - {fileID: 4129003987720096}
   - {fileID: 1442945200943424575}
+  - {fileID: 956665692044541286}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2230,6 +2229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 100
+  health: 0
   healthSlider: {fileID: 3772248014089596028}
   deathClip: {fileID: 8300000, guid: a537c64e2a6d0764ba4f36fad5e3117f, type: 3}
   hitClip: {fileID: 8300000, guid: 2a23cabc8b9e68945b42823220b634d6, type: 3}
@@ -2262,35 +2262,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
---- !u!114 &5219285333438821859
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1945756756704510}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_GeneratorAsset: {fileID: 0}
-  m_Script: {fileID: 11500000, guid: 602cfdf64e2bfa941b30e8a726588c7a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackSound: {fileID: 8300000, guid: d98f6a6ac1d2fed43bbfad694819a13d, type: 3}
-  swordPrefab: {fileID: 1500436773217028}
-  isAttacking: 0
---- !u!65 &1394537817293315392
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1945756756704510}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1.5}
-  m_Center: {x: 0, y: 0.7, z: 0.9}
 --- !u!1 &1949430354838262
 GameObject:
   m_ObjectHideFlags: 0
@@ -2602,6 +2573,68 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+--- !u!1 &4866302624015341181
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 956665692044541286}
+  - component: {fileID: 5446068532379756494}
+  - component: {fileID: 5017812093094351817}
+  m_Layer: 0
+  m_Name: SlashCollisionObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &956665692044541286
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4866302624015341181}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.70000005, z: 1.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4507805824733270}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &5446068532379756494
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4866302624015341181}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5017812093094351817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4866302624015341181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 602cfdf64e2bfa941b30e8a726588c7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackSound: {fileID: 8300000, guid: 2307d157efc34844b9776813b4f691c1, type: 3}
+  isAttacking: 0
+  damage: 50
+  player: {fileID: 0}
 --- !u!1 &5951998898936067434
 GameObject:
   m_ObjectHideFlags: 0

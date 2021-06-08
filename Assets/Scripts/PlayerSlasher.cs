@@ -19,18 +19,20 @@ public class PlayerSlasher : MonoBehaviour {
     private AudioSource audioSource;
     public AudioClip attackSound;
 
-    public GameObject swordPrefab;
+    //public GameObject swordPrefab;
     public bool isAttacking = false;
     private PlayerHealth playerHealth;
-
+    public float damage = 50;
+    public Transform player;
 
     private void Start() {
         // 사용할 컴포넌트들을 가져오기
-        playerInput = GetComponent<PlayerInput>();
-        playerMoving = GetComponent<PlayerMoving>();
-        playerAnimator = GetComponent<Animator>();
-        audioSource = GetComponent<AudioSource>();
-        playerHealth = GetComponent<PlayerHealth>();
+        player = transform.parent;
+        playerInput = player.gameObject.GetComponent<PlayerInput>();
+        playerMoving = player.gameObject.GetComponent<PlayerMoving>();
+        playerAnimator = player.gameObject.GetComponent<Animator>();
+        audioSource = player.gameObject.GetComponent<AudioSource>();
+        playerHealth = player.gameObject.GetComponent<PlayerHealth>();
     }
 
     /*
@@ -95,6 +97,7 @@ public class PlayerSlasher : MonoBehaviour {
 
     private void OnTriggerStay(Collider other)
     {
+
         if (isAttacking)
         {
             if (other.gameObject.layer == LayerMask.NameToLayer("Enemy"))
@@ -103,7 +106,9 @@ public class PlayerSlasher : MonoBehaviour {
 
                 if (enemy != null)
                 {
-                    enemy.Die();
+                    Vector3 hitPoint = other.ClosestPoint(transform.position);
+                    Vector3 hitNormal = transform.position - other.transform.position;
+                    enemy.OnDamage(damage, hitPoint, hitNormal);
                 }
             }
         }
