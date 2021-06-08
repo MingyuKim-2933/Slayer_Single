@@ -16,7 +16,8 @@ public class PlayerMoving : MonoBehaviour {
         playerInput = GetComponent<PlayerInput>();
         playerRigidbody = GetComponent<Rigidbody>();
         playerAnimator = GetComponent<Animator>();
-        
+        DontDestroyOnLoad(gameObject);
+
     }
 
     // FixedUpdate는 물리 갱신 주기에 맞춰 실행됨
