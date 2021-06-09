@@ -158,8 +158,12 @@ public class Enemy : LivingEntity {
         //사망 효과음 재생
         enemyAudioPlayer.PlayOneShot(deathSound);
 
+        Debug.Log("EnemyDie");
+        GameManager.instance.AddCount(1);
+
         // *** 오브젝트 제거 
         Destroy(gameObject, 2f);
+        
     }
 
     private void OnTriggerStay(Collider other) {

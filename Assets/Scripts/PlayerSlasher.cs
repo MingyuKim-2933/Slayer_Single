@@ -95,7 +95,7 @@ public class PlayerSlasher : MonoBehaviour {
         isAttacking = false;
     }
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
 
         if (isAttacking)

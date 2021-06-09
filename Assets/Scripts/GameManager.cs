@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour {
     private static GameManager m_instance; // 싱글톤이 할당될 static 변수
 
     private int score = 0; // 현재 게임 점수
+    private int count = 0;
     public bool isGameover { get; private set; } // 게임 오버 상태
 
     public PlayerHealth[] playerPrefabs;
@@ -56,6 +57,18 @@ public class GameManager : MonoBehaviour {
             score += newScore;
             // 점수 UI 텍스트 갱신
             UIManager.instance.UpdateScoreText(score);
+        }
+    }
+
+    public void AddCount(int newCount)
+    {
+        Debug.Log("AddCount");
+        if (!isGameover)
+        {
+            // 점수 추가
+            count += newCount;
+            // 점수 UI 텍스트 갱신
+            UIManager.instance.UpdateCountText(count);
         }
     }
 

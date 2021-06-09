@@ -93,5 +93,6 @@ public class EnemySpawner : MonoBehaviour {
         enemy.onDeath += () => Destroy(enemy.gameObject, 10f);
         //적 사망 시 점수 상승
         enemy.onDeath += () => GameManager.instance.AddScore(100);
+        
     }
 }

@@ -2633,7 +2633,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackSound: {fileID: 8300000, guid: 2307d157efc34844b9776813b4f691c1, type: 3}
   isAttacking: 0
-  damage: 50
+  damage: 10
   player: {fileID: 0}
 --- !u!1 &5951998898936067434
 GameObject:
