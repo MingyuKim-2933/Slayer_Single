@@ -35,6 +35,6 @@ public class SelectPlayer : MonoBehaviour
     IEnumerator WaitAnimation()
     {
         yield return new WaitForSeconds(5);
-        SceneManager.LoadScene("Main");
+        Loading.LoadScene("FAE_Demo 2");
     }
 }

@@ -12,7 +12,7 @@ public class Portal : MonoBehaviour
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
-            SceneManager.LoadScene("FAE_Demo 3");
+            Loading.LoadScene("FAE_Demo 3");
         }
 
     }
