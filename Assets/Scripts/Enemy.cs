@@ -85,6 +85,7 @@ public class Enemy : LivingEntity {
                 //추적 대상 존재 : 경로를 갱신하고 AI 이동을 계속 진행
                 pathFinder.isStopped = false;
                 pathFinder.SetDestination(targetEntity.transform.position);
+                enemyAnimator.SetTrigger("Move");
             }
             else
             {
@@ -137,6 +138,13 @@ public class Enemy : LivingEntity {
         
     }
 
+    IEnumerator WaitDestroy()
+    {
+        yield return new WaitForSeconds(2f);
+        Destroy(gameObject);
+    }
+
+
     // 사망 처리
     public override void Die() {
         // LivingEntity의 Die()를 실행하여 기본 사망 처리 실행
@@ -157,6 +165,8 @@ public class Enemy : LivingEntity {
         enemyAnimator.SetTrigger("Die");
         //사망 효과음 재생
         enemyAudioPlayer.PlayOneShot(deathSound);
+
+        StartCoroutine(WaitDestroy());
 
         Debug.Log("EnemyDie");
         GameManager.instance.AddCount(1);
