@@ -4,6 +4,9 @@ using UnityEngine;
 
 // 플레이어 캐릭터를 사용자 입력에 따라 움직이는 스크립트
 public class PlayerMoving : MonoBehaviour {
+    public static float wizardSpeed = 5;
+    public static float knightSpeed = 4;
+    public static float archerSpeed = 6;
     public float moveSpeed = 5f; // 앞뒤 움직임의 속도
     //public float rotateSpeed = 180f; // 좌우 회전 속도
 
@@ -18,6 +21,10 @@ public class PlayerMoving : MonoBehaviour {
         playerAnimator = GetComponent<Animator>();
         DontDestroyOnLoad(gameObject);
 
+        int type = (int)PlayerSelectManager.playerType;
+        if (type == (int)PlayerSelectManager.PlayerType.Wizard) moveSpeed = wizardSpeed;
+        else if (type == (int)PlayerSelectManager.PlayerType.Knight) moveSpeed = knightSpeed;
+        else if (type == (int)PlayerSelectManager.PlayerType.Archer) moveSpeed = archerSpeed;
     }
 
     // FixedUpdate는 물리 갱신 주기에 맞춰 실행됨

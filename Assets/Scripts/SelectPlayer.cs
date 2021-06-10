@@ -8,6 +8,7 @@ public class SelectPlayer : MonoBehaviour
     public PlayerSelectManager.PlayerType playerType;
     public PlayerSelectManager playerSelMan;
     public AudioSource audio;
+    
     // Start is called before the first frame update
     void Start()
     {

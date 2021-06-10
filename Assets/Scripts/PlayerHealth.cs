@@ -17,8 +17,13 @@ public class PlayerHealth : LivingEntity {
 
     private PlayerMoving playerMoving; // 플레이어 움직임 컴포넌트
     private PlayerShooter playerShooter; // 플레이어 슈터 컴포넌트
-
+    public static float wizardHealth = 100;
+    public static float knightdHealth = 200;
+    public static float archerHealth = 130;
     private void Awake() {
+        if (PlayerSelectManager.playerType == PlayerSelectManager.PlayerType.Wizard) health = wizardHealth;
+        else if (PlayerSelectManager.playerType == PlayerSelectManager.PlayerType.Knight) health = knightdHealth;
+        else if (PlayerSelectManager.playerType == PlayerSelectManager.PlayerType.Archer) health = archerHealth;
         // 사용할 컴포넌트를 가져오기
         playerAnimator = GetComponent<Animator>();
         playerAudioPlayer = GetComponent<AudioSource>();

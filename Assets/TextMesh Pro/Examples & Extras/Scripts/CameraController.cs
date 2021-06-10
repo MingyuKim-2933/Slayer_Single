@@ -198,9 +198,8 @@ namespace TMPro.Examples
                 // Check for left mouse button to select a new CameraTarget or to reset Follow position
                 if (Input.GetMouseButton(0))
                 {
-                    Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
                     RaycastHit hit;
-
+                    Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
                     if (Physics.Raycast(ray, out hit, 300, 1 << 10 | 1 << 11 | 1 << 12 | 1 << 14))
                     {
                         if (hit.transform == CameraTarget)
