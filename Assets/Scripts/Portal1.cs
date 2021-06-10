@@ -12,7 +12,8 @@ public class Portal1 : MonoBehaviour
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
-            SceneManager.LoadScene("FAE_Demo 2");
+            other.gameObject.transform.position = new Vector3(-175, 5, -168);
+            Loading.LoadScene("FAE_Demo 2");
         }
 
     }
