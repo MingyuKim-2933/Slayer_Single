@@ -22,7 +22,7 @@ public class PlayerSelectManager : MonoBehaviour
     }
     private static PlayerSelectManager m_instance;
     public enum PlayerType { Wizard=0, Knight=1, Archer=2}
-    public static PlayerType playerType = PlayerType.Knight;
+    public static PlayerType playerType = PlayerType.Wizard;
     public Button[] buttons;
     public GameObject[] players;
     public AudioSource audioSource;
