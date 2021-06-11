@@ -16,7 +16,7 @@ public class SpeeedPack : MonoBehaviour, IItem
         gameObject.SetActive(false);
     }
 
-    public void Destroy()
+    private void Destroy()
     {
         A.moveSpeed = 5f;
         Destroy(gameObject);
