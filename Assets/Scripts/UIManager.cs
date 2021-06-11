@@ -45,7 +45,7 @@ public class UIManager : MonoBehaviour {
 
     public void UpdateCountText(int count)
     {
-        if (count < 5)
+        if (count < 16)
             countText.text = "사냥한 적 수 : " + count;
         else
             countText.text = "임무 완료";
