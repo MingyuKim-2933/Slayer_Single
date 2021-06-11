@@ -33,6 +33,14 @@ public class Arrow : MonoBehaviour
                 Vector3 hitNormal = transform.position - other.transform.position;
                 enemy.OnDamage(damage, hitPoint, hitNormal);
             }
+
+            BossEnemy enemy1 = other.GetComponent<BossEnemy>();
+            if (enemy1 != null)
+            {
+                Vector3 hitPoint = other.ClosestPoint(transform.position);
+                Vector3 hitNormal = transform.position - other.transform.position;
+                enemy1.OnDamage(damage, hitPoint, hitNormal);
+            }
         }
     }
 }
