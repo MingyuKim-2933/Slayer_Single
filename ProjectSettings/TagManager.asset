@@ -9,6 +9,13 @@ TagManager:
   - FxTemporaire
   - KE_EvilMage
   - KE_Dragon
+  - KE_Skeleton
+  - KE_Bbull
+  - KE_MP
+  - KE_Golem
+  - Archer
+  - Wizard
+  - Tanker
   layers:
   - Default
   - TransparentFX

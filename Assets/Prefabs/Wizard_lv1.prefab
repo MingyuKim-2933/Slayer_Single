@@ -15459,7 +15459,7 @@ GameObject:
   - component: {fileID: 6020776250052107980}
   m_Layer: 9
   m_Name: Wizard_lv1
-  m_TagString: Player
+  m_TagString: Wizard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
