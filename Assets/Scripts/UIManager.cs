@@ -60,4 +60,8 @@ public class UIManager : MonoBehaviour {
     public void GameRestart() {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+    public void GoToMenu()
+    {
+        SceneManager.LoadScene("Menu");
+    }
 }
