@@ -26,7 +26,7 @@ public class MagicBall : MonoBehaviour
         if (other.gameObject.layer == LayerMask.NameToLayer("Enemy"))
         {
             Enemy enemy = other.GetComponent<Enemy>();
-            BossEnemy enemy1 = other.GetComponent<BossEnemy>();
+            
             if (enemy != null)
             {
                 Vector3 hitPoint = other.ClosestPoint(transform.position);
@@ -34,6 +34,7 @@ public class MagicBall : MonoBehaviour
                 enemy.OnDamage(damage, hitPoint, hitNormal);
             }
 
+            BossEnemy enemy1 = other.GetComponent<BossEnemy>();
             if (enemy1 != null)
             {
                 Vector3 hitPoint = other.ClosestPoint(transform.position);

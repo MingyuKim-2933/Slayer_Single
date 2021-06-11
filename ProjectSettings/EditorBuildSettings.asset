@@ -15,12 +15,27 @@ EditorBuildSettings:
     path: Assets/Scenes/FAE_CliffCoverageDemo 1.unity
     guid: fda1cba01bd1fd94880a5ce524372fec
   - enabled: 1
-    path: Assets/Scenes/PlayerSelect.unity
-    guid: 9fa3a3ff74823824799b293ccb75001f
-  - enabled: 1
     path: Assets/Scenes/FAE_Demo 3.unity
     guid: 86284ebb60d5729468a279e02630c3b5
   - enabled: 1
     path: Assets/Scenes/LoadingScene.unity
     guid: 58d81712ac3fcce4d950b8c057c5f04f
+  - enabled: 1
+    path: Assets/Scenes/Logo.unity
+    guid: b375ed93cfaf6c0408d2e99c176da0e1
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: b979e194a4c103548bd57c3af192aa08
+  - enabled: 1
+    path: Assets/Scenes/Story.unity
+    guid: c6bda0140ff84ab4b8668e0c8ccf520a
+  - enabled: 1
+    path: Assets/Scenes/FAE_Demo 4.unity
+    guid: f08c611f7a7b7e145b79076fe6fa91f7
+  - enabled: 1
+    path: Assets/Scenes/PlayerSelect.unity
+    guid: 102b92183644c4445869e4eff9f3f884
+  - enabled: 1
+    path: Assets/Scenes/Ending.unity
+    guid: 4b4e77cc254837d45970e900637ba41b
   m_configObjects: {}
