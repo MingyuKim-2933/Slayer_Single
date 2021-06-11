@@ -7,7 +7,7 @@ public class MagicBall : MonoBehaviour
     public float speed = 100f;
     private Rigidbody magicBallRigidbody;
     // Start is called before the first frame update
-    public float damage = 50;
+    public float damage = 30;
     void Start()
     {
         magicBallRigidbody = GetComponent <Rigidbody>();
