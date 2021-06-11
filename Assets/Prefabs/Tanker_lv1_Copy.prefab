@@ -2025,7 +2025,7 @@ GameObject:
   - component: {fileID: 1033148616218796401}
   m_Layer: 9
   m_Name: Tanker_lv1_Copy
-  m_TagString: Player
+  m_TagString: Tanker
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

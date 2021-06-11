@@ -5,31 +5,39 @@ using UnityEngine;
 public class AttackPack : MonoBehaviour, IItem
 {
     private float time;
-    private Arrow A;
-    private MagicBall B;
-    private PlayerSlasher C;
+    private GameObject A;
+    private GameObject B;
+    private GameObject C;
+
+    private Arrow A_1;
+    private MagicBall B_1;
+    private PlayerSlasher C_1;
+
     public void Use(GameObject target)
     {
-        A = target.GetComponent<Arrow>();
-        B = target.GetComponent<MagicBall>();
-        C = target.GetComponent<PlayerSlasher>();
-        if(A != null)
+        A = GameObject.FindWithTag("Archer");
+        B = GameObject.FindWithTag("Wizard");
+        C = GameObject.FindWithTag("Tanker");
+        if (A != null)
         {
-            A.damage += 30f;
+            A_1 = A.GetComponent<Arrow>();
+            A_1.damage += 30f;
             Invoke("DestroyA", 10f);
             gameObject.SetActive(false);
         }
 
         else if(B != null)
         {
-            B.damage += 30f;
+            B_1 = B.GetComponent<MagicBall>();
+            B_1.damage += 30f;
             Invoke("DestroyB", 10f);
             gameObject.SetActive(false);
         }
 
         else
         {
-            C.damage += 0.5f;
+            C_1 = C.GetComponent<PlayerSlasher>();
+            C_1.damage += 0.5f;
             Invoke("DestroyC", 10f);
             gameObject.SetActive(false);
         }
@@ -39,19 +47,19 @@ public class AttackPack : MonoBehaviour, IItem
 
     private void DestroyA()
     {
-        A.damage = 30f;
+        A_1.damage = 30f;
         Destroy(gameObject);
     }
 
     private void DestroyB()
     {
-        B.damage = 50f;
+        B_1.damage = 50f;
         Destroy(gameObject);
     }
 
     private void DestroyC()
     {
-        C.damage = 1f;
+        C_1.damage = 1f;
         Destroy(gameObject);
     }
 }
