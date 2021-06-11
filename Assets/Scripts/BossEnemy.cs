@@ -150,7 +150,7 @@ public class BossEnemy : LivingEntity
     IEnumerator WaitDestroy()
     {
         yield return new WaitForSeconds(2f);
-        Destroy(gameObject);
+        //Destroy(gameObject);
     }
 
 
@@ -182,10 +182,16 @@ public class BossEnemy : LivingEntity
         GameManager.instance.AddCount(1);
 
         // *** 오브젝트 제거 
-        Destroy(gameObject, 2f);
-
+        StartCoroutine(WaitScenChange());
+        //Destroy(gameObject, 2f);
+        
     }
 
+    IEnumerator WaitScenChange()
+    {
+        yield return new WaitForSeconds(5f);
+        Loading.LoadScene("Ending");
+    }
 
     private void OnTriggerStay(Collider other)
     {

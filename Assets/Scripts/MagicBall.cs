@@ -7,7 +7,7 @@ public class MagicBall : MonoBehaviour
     public float speed = 100f;
     private Rigidbody magicBallRigidbody;
     // Start is called before the first frame update
-    public float damage = 100;
+    public float damage = 50;
     void Start()
     {
         magicBallRigidbody = GetComponent <Rigidbody>();
@@ -21,7 +21,7 @@ public class MagicBall : MonoBehaviour
         
     }
 
-    void OnTriggerStay(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("Enemy"))
         {

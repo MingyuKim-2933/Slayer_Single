@@ -2233,7 +2233,7 @@ MonoBehaviour:
   healthSlider: {fileID: 3772248014089596028}
   deathClip: {fileID: 8300000, guid: a537c64e2a6d0764ba4f36fad5e3117f, type: 3}
   hitClip: {fileID: 8300000, guid: 2a23cabc8b9e68945b42823220b634d6, type: 3}
-  itemPickupClip: {fileID: 8300000, guid: a537c64e2a6d0764ba4f36fad5e3117f, type: 3}
+  itemPickupClip: {fileID: 8300000, guid: 3702b8fcbfea0b249bcd7f9df6271102, type: 3}
 --- !u!114 &8659815868317082958
 MonoBehaviour:
   m_ObjectHideFlags: 0
