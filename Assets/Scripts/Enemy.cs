@@ -174,7 +174,7 @@ public class Enemy : LivingEntity {
         GameManager.instance.AddCount(1);
 
         // *** 오브젝트 제거 
-        Destroy(gameObject, 2f);
+        //Destroy(gameObject, 2f);
         
     }
 

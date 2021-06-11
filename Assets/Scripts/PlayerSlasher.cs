@@ -103,6 +103,7 @@ public class PlayerSlasher : MonoBehaviour {
             if (other.gameObject.layer == LayerMask.NameToLayer("Enemy"))
             {
                 Enemy enemy = other.GetComponent<Enemy>();
+                BossEnemy enemy1 = other.GetComponent<BossEnemy>();
 
                 if (enemy != null)
                 {
@@ -110,6 +111,13 @@ public class PlayerSlasher : MonoBehaviour {
                     Vector3 hitNormal = transform.position - other.transform.position;
                     if(Random.Range(1, 4)%2==0)
                         enemy.OnDamage(damage, hitPoint, hitNormal);
+                }
+
+                if (enemy1 != null)
+                {
+                    Vector3 hitPoint = other.ClosestPoint(transform.position);
+                    Vector3 hitNormal = transform.position - other.transform.position;
+                    enemy1.OnDamage(damage, hitPoint, hitNormal);
                 }
             }
         }
