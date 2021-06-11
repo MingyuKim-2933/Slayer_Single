@@ -22,7 +22,7 @@ public class PlayerSlasher : MonoBehaviour {
     //public GameObject swordPrefab;
     public bool isAttacking = false;
     private PlayerHealth playerHealth;
-    public float damage = 50;
+    public float damage = 1;
     public Transform player;
 
     private void Start() {
@@ -95,7 +95,7 @@ public class PlayerSlasher : MonoBehaviour {
         isAttacking = false;
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
 
         if (isAttacking)
@@ -108,7 +108,8 @@ public class PlayerSlasher : MonoBehaviour {
                 {
                     Vector3 hitPoint = other.ClosestPoint(transform.position);
                     Vector3 hitNormal = transform.position - other.transform.position;
-                    enemy.OnDamage(damage, hitPoint, hitNormal);
+                    if(Random.Range(1, 4)%2==0)
+                        enemy.OnDamage(damage, hitPoint, hitNormal);
                 }
             }
         }
