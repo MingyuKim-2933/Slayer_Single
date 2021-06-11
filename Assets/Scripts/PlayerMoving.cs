@@ -19,7 +19,6 @@ public class PlayerMoving : MonoBehaviour {
         playerInput = GetComponent<PlayerInput>();
         playerRigidbody = GetComponent<Rigidbody>();
         playerAnimator = GetComponent<Animator>();
-        DontDestroyOnLoad(gameObject);
 
         int type = (int)PlayerSelectManager.playerType;
         if (type == (int)PlayerSelectManager.PlayerType.Wizard) moveSpeed = wizardSpeed;

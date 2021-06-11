@@ -25,7 +25,6 @@ public class GameManager : MonoBehaviour {
 
     private int score = 0; // 현재 게임 점수
     private int count = 0;
-    public static int playercount = 0;//플레이어 인원수
     public bool isGameover { get; private set; } // 게임 오버 상태
 
     public PlayerHealth[] playerPrefabs;
@@ -40,12 +39,8 @@ public class GameManager : MonoBehaviour {
             // 자신을 파괴
             Destroy(gameObject);
         }
-        if(playercount == 0)//플레이어 주인공이 여러명 생기는걸 방지하기위함
-        {
-            player = Instantiate(playerPrefabs[(int)PlayerSelectManager.playerType], playerSpawner.transform.position, playerSpawner.transform.rotation);
-            playercount++;
-        }
-        
+        player = Instantiate(playerPrefabs[(int)PlayerSelectManager.playerType], playerSpawner.transform.position, playerSpawner.transform.rotation);
+
     }
 
     private void Start() {
@@ -80,7 +75,6 @@ public class GameManager : MonoBehaviour {
 
     // 게임 오버 처리
     public void EndGame() {
-        playercount--;
         // 게임 오버 상태를 참으로 변경
         isGameover = true;
         // 게임 오버 UI를 활성화
